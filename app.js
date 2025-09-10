@@ -34,5 +34,24 @@ console.table(car);
 console.log(carDetails);
 
 const book = {
-  title: Something,
+  title: `I, robot`,
+  author: `Isaac Asimov`,
+  numPages: 256,
+  isbn13: 9780586025321,
+  briefDesc: `The classic collection of robot stories from the master of the genre.In these stories Isaac Asimov creates the Three Laws of Robotics and ushers in the Robot Age`,
+};
+
+const bookDetails = `${book.title} by ${book.author}, ISBN13: ${book.isbn13}.\nBrief Summary: ${book.briefDesc}`;
+
+console.log(bookDetails);
+
+const blogPost = {
+  title: "My first blog post",
+  author: {
+    name: "Bob",
+    age: 30,
+    favouriteColour: "red",
+  },
+  tags: ["coding", "javascript", "objects", "arrays"],
+  content: "This is my blog post about learning objects and arrays.",
 };
